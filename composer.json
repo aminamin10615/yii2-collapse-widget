@@ -10,6 +10,12 @@
             "email": "helloteju96@gmail.com"
         }
     ],
+	 "repositories":[
+   		{
+        	"type": "git",
+        	"url": "https://github.com/tejrajs/yii2-collapse-widget/"
+    	}
+	],
     "require": {
         "yiisoft/yii2": "*"
     },
