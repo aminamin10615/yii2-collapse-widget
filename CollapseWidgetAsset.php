@@ -13,9 +13,12 @@ class CollapseWidgetAsset extends AssetBundle
 			'yii\web\JqueryAsset',
 			'yii\web\YiiAsset',
 			'yii\bootstrap\BootstrapAsset',
+			'yii\bootstrap\BootstrapPluginAsset',
 	];
-	public $js = ['wigets.js'];
+	public $sourcePath = '@vendor/tejrajs/yii2-collapse-widget/';
+	
+	public $js = ['assets/js/wigets.js'];
 	public $css = ['assets/css/wigets.css','assets/css/glyphicons_regular.css'];
-	public $sourcePath = '@vendor/tejrajs/yii2-fullcalendar/assets';
+	
 
 }

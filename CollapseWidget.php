@@ -21,7 +21,7 @@ class CollapseWidget extends Widget
 	public function init()
     {
         parent::init();
-        $this->clientOptions = false;
+        //$this->clientOptions = false;
         Html::addCssClass($this->options, 'widget');
         if (empty($this->options['data-toggle'])) {
         	$this->options['data-toggle'] = 'collapse-widget';
@@ -34,10 +34,12 @@ class CollapseWidget extends Widget
 	
 	public function run()
 	{
+		$view = $this->getView();
+		CollapseWidgetAsset::register($view);
 		echo Html::endTag('div');
 		$tag = ArrayHelper::remove($this->options, 'tag', 'div');
 		echo Html::endTag($tag);
-		$view = $this->getView();
-		CollapseWidgetAsset::register($view);
+		
+		
 	}
 }

@@ -32,7 +32,10 @@ use tejrajs\collapsewidget\CollapseWidget;
 
 
 <?php 
-CollapseWidget::begin(['title'=>'Title']);
+CollapseWidget::begin([
+	'title'=>'Title',
+	//'options' => [ 'data-collapse-closed' => 'true'],
+]);
 ?>
 <body>
 <?php CollapseWidget::end();?>
