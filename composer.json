@@ -1,0 +1,21 @@
+{
+    "name": "tejrajs/yii2-collapse-widget",
+    "description": "collapse widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","collapse-widget","collapse","widget"],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Tej Raj Shrestha",
+            "email": "helloteju96@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "tejrajs\\collapsewidget\\": ""
+        }
+    }
+}
